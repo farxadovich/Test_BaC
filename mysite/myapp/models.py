@@ -8,14 +8,14 @@ class Category(models.Model):
         return self.name
 
 class Question(models.Model):
-    fani = models.ForeignKey(Category, on_delete=models.CASCADE,verbose_name='fani')
-    text = models.CharField(max_length=1000,verbose_name='savol')
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    text = models.CharField(max_length=1000)
 
     def __str__(self):
         return self.text
 
 class Choice(models.Model):
-    text = models.CharField(max_length=1000,verbose_name='javob')
+    text = models.CharField(max_length=1000)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     correct = models.BooleanField(default=False)
 

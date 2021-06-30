@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4789acc6-918c-465a-a386-cf5557d8dd2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/myapp/templates/myapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/myapp/templates/myapp/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/myapp/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="4789acc6-918c-465a-a386-cf5557d8dd2c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
