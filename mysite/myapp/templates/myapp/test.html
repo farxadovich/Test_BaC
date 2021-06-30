@@ -7,11 +7,11 @@
 <body>
 <form action="/check/" method="post">
 
-    {% for savol in savols %}
-    {{ savol.text }} <br>
-    {% for choice in savol.choice_set.all %}
-    <form><input type="radio" id="savol" name="sav" value="birlik">
-    <label for="savol">{{ choice.text }} </label> <br></form>
+    {% for question in questions %}
+    {{ question.text }} <br>
+    {% for choice in question.choice_set.all %}
+    <form><input type="radio" id="question" name="sav" value="birlik">
+    <label for="question">{{ choice.text }} </label> <br></form>
 
     {% endfor %}
     {% endfor %}

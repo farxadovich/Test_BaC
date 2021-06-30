@@ -6,9 +6,10 @@
 </head>
 <body>
 <h1>Test</h1>
-    {% for Category in category %}
-    <a href="{% url 'test' Category.id}">{{ Category.name }}</a>
+    {% for categori in category %}
+    <a href="{% url 'test' categori.id %}">{{ categori.name }}</a>
     <br>
+
     {% endfor %}
 </body>
 </html>
