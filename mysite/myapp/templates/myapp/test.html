@@ -5,17 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/check/" method="post">
+<div class="container-fluid">
 
-    {% for question in questions %}
-    {{ question.text }} <br>
-    {% for choice in question.choice_set.all %}
-    <form><input type="radio" id="question" name="sav" value="birlik">
-    <label for="question">{{ choice.text }} </label> <br></form>
-
-    {% endfor %}
-    {% endfor %}
+    <form action="{% url 'myapp:check' %}">
+        {% for question in questions %}
+        {{ question.text }} {{ forloop.counter }}
+        <br>
+    <fieldset id="{{ question.id }}">
+        {% for choice in question.choice_set.all %}
+        <input type="radio" id="html" name="{{ question.id }}" value="{{ choice.id }}">
+        <label for="html">{{ choice.text }}</label><br>
+        {% endfor %}
+    </fieldset>
+       <hr>
+        {% endfor %}
     <input type="submit" value="OK">
-</form>
+    </form>
+</div>
+
 </body>
 </html>
